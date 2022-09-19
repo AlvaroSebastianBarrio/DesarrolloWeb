@@ -1,0 +1,582 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    
+}
+/* .Inicio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 42vh 15vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    
+} */
+
+.bg-colornav{
+    background-color: black;
+    height: 16%;
+}
+.nav-link{
+    color: aliceblue !important;
+}
+.navbar-toggler-icon {
+    background-color: aliceblue;
+    border-radius: 20%;
+}
+
+.bg-colornavgrad{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,14,101,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#main-header{
+    
+    position: absolute ;
+    height: 26%;
+    width: 100%; 
+    /* background-color: green; */
+	left: 0; 
+	top: 0; 
+
+}
+.navegacion{
+    position: absolute;
+    z-index: 1000;
+    
+}
+
+#logo{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+#logo img{
+    height: 60px;
+}
+#encabezado{
+    font-family: sans-serif;
+    margin-left: 20px;
+    color: black;    
+}
+.PiePagina {
+display: flex;   
+width: 100%;
+height: 15%;
+position: absolute;
+bottom: 0;   
+background-color: black;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    background-image: url(../img/fondobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    position: relative;
+    
+}
+
+
+li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1vw;
+    transition: all .3s ease 0s;
+    
+}
+
+
+
+li:hover {
+    /* background-color: green; */
+    transform: scale(99%);
+    
+}
+li>a:hover{
+    color: red !important;
+    background-color: black !important;
+} 
+#navbarSupportedContent{
+    background-color: black;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-menu.show{
+   background-color: black; 
+}
+
+/*----------Pagina index------------------*/
+.carrousel1{
+    z-index: -1;
+}
+.carousel-inner > .carousel-item active > img{
+    object-fit: scale-down;
+    height: 35vh;
+    width: 100%;  
+}
+.carousel-inner > .carousel-item > img {
+  object-fit: scale-down;
+  height: 35vh;
+  width: 100%; 
+}
+.carrusel1{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+.carrusel2{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+.carrusel3{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+
+
+
+/*----------------------------------------*/
+.servicios{
+    position: relative;
+}
+
+.submenu_Servicios{
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+.submenu_Servicios > li{
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px white;
+    text-align: center;
+    background-color: #24252a;
+}
+.submenu_Servicios > li:hover{
+    background-color:rgb(165, 27, 27);
+}
+.servicios:hover > .submenu_Servicios {
+    display: block;
+}
+/*----------------------------------------*/
+.productos{
+    position: relative;
+}
+
+.submenu_Productos{
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+.submenu_Productos > li{
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px white;
+    text-align: center;
+    background-color: #24252a;
+}
+.submenu_Productos > li:hover{
+    background-color: rgb(165, 27, 27);
+}
+.productos:hover > .submenu_Productos {
+    display: block;
+}
+
+
+
+
+/*-----------------------------*/
+/*-------Pagina Productos------*/
+
+
+
+.productos_ofrecidos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: white; */
+    flex-direction: row;
+    /* height:50%; */
+    /* width: 50%; */
+    /* border: 1px solid; */
+    /* border-color: red; */
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+
+}
+
+
+.img_prod {
+    display: flex;
+    padding: 1%;
+    /* flex-wrap: wrap; */
+    width: 200px;
+    height:250px;
+    /* object-fit: contain; */
+}
+.contenedor_pag_productos{
+    width: 100vw;
+    height: 0vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .boton_inicio{
+    background-color: blue;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,14,101,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 5% 50px;
+    border-radius: 20px;
+    margin-top: 50vh;
+    color: white;
+    cursor:pointer;
+} */
+/* .boton_inicio:hover{
+    transform: scale(110%);
+} */
+#logo div h4{
+    
+    color: yellow;
+    border: white 1px solid;
+    position: absolute;
+    right:10px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------*/
+/*-------Pagina Productos2------*/
+
+
+.img_prod2{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.divProductos2{
+    width: 80vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.divProductos2>h1{
+    color: yellow;
+}
+/*--------Contacto---------*/
+
+.pagina_contacto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+.mapa{
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+/*-----------------------------*/
+/*-------Pagina Servicios------*/
+
+.ContainerPadreServicios1{
+    
+    display: grid;
+    margin-top: 0%;
+    background-color: white;
+    grid-template-columns: repeat(3, 0.34fr);
+    grid-template-rows: auto auto;
+    gap: 2px;
+    padding: 2px;
+    z-index: -1;
+    
+}
+
+.uno{ 
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: red;
+   
+}
+.titulo1{
+    position: absolute;
+    top: 0;
+    padding: 1px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.dos{
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: yellowgreen;
+}
+.titulo2{
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.tres{
+    /* grid-area:  */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: blueviolet;
+}
+.titulo3{
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cuatro{
+    /* grid-area:  */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: aqua;
+}
+.titulo4{
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.cinco{
+    /* grid-area:  */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: darkgreen;
+}
+.titulo5{
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.seis{ 
+    /* grid-area:  */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color:pink;
+}
+.titulo6{
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*-----------------------------*/
+/*-------Pagina Nuestro Taller------*/
+
+.ContainerPadreTaller{
+    display: grid;
+    margin-top:3%;
+    background-color: black;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: auto auto;
+    grid-auto-rows: 20%;
+    gap: 2px;
+    padding: 2px;
+    /* z-index: -1; */
+}
+
+.itemuno{ 
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    /* background-color: red; */
+    grid-row-start: span 2;
+    
+   
+}
+.TextoNuestroTaller{
+    position: absolute;
+    /* margin:; */
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+}
+.TextoNuestroTaller2{
+    position: absolute;
+    top: 6%;
+    padding: 4px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.itemdos{
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: yellowgreen;
+}
+
+.itemtres{
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: yellowgreen;
+}
+
+.itemcuatro{
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: yellowgreen;
+}
+
+.itemcinco{
+    /* grid-area: */
+    /* display:flex; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+    background-color: yellowgreen;
+}
+
+/*--------------- Pagina de Servicios 2----------------- */
+/* .containerCards{
+    display: flex;
+    flex-direction: row;
+    ;
+    padding: 2px;
+} */
+
+.card-title{
+    color: crimson;
+}
+
+
+/* ----------------------------------------------------- */
+/* ---------------  Media Queries -----------------------*/
+
+@media only screen and (max-width: 576px){
+    
+    
+    /*Galeria Grid Servicios1*/
+    .ContainerPadreServicios1{
+        margin-top: 350%;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: auto auto auto auto auto auto; */
+   
+    }
+
+    /* Pie de Pagina de Servicios1 */
+    .PiePagina{
+        position: fixed;
+    }
+
+    /* Productos1 */
+.productos_ofrecidos{
+    margin-top: 100%;
+}
+.body{
+    background-repeat: repeat;
+}
+ /*-----Nuestro Taller---*/
+ .ContainerPadreTaller{
+    margin-top: 400%;
+    grid-template-columns: repeat(1, 1fr);
+ } 
+ /*-----Productos2------*/
+ .divProductos2{
+    width: 80vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+}

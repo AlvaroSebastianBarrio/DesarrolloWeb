@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <title>Taller Mecanico</title>
+      <link rel="stylesheet" href="./css/estilos.css">
+    
+  </head>
+
+  <body>
+    
+    <header id="main-header">
+        <div class="navegacion">
+            <!---------------------- MENU RESPONSIVO BOOSTRAP ------------------->
+            <nav class="navbar navbar-expand-lg navbar-item bg-colornav fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <section id="logo">
+                        <img src="./img/logo.png" alt="logo">
+                        <h4 id="encabezado"><font color="white">Taller Mecanico</font></h4>
+                    </section>   
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="Inicio" href="./index.html">Inicio</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="./NuestroTaller/nuestrotaller.html">Nuestro Taller</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./Servicios/servicios1.html">Servicio #1</a></li>
+                          <li><a class="dropdown-item" href="./Servicios/servicios2.html">Servicio #2</a></li>
+                          
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./Productos/productos1.html">Producto #1</a></li>
+                          <li><a class="dropdown-item" href="./Productos/productos2.html">Producto #2</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="./Contacto/contacto.html">Contacto</a>
+                      </li>
+                    
+                    </ul>
+                    
+                  </div>
+                </div>
+            </nav>
+        
+        </div>    
+
+    </header>    
+    
+    <!-----------------EMPIEZA CARROUSEL-------------------------------------------------->
+    <div class="containerPadreCarrusel">
+        <div class="carrousel1">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/VarillaAceite.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carrusel1">
+                                <h5>Poné tu auto en las mejores manos</h5>
+                                <p>Taller multimarca para el mantenimiento de tu vehículo.</p>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/Motor.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carrusel2">
+                                <h5>Especialistas en Automotor</h5>
+                                <p>Mecánicos de primer nivel y la  garantía de que el mantenimiento.</p>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="./img/Talleresmecanicosfondo1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carrusel3">
+                                <h5>Promociones Especiales BOSCH</h5>
+                                <p>Aprovechá los descuentos especiales</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>    
+    <!-----------------TERMINA CARROUSEL-------------------------------------------------->
+
+    <section id="seccion1">
+         
+        <!-- <div class="Inicio">
+            <h2>Poné tu auto en las mejores manos</h2> 
+            <br>
+            <h4>En la red de talleres encontrarás mecánicos de primer nivel y la  garantía de que el mantenimiento de tu auto se realiza de manera idónea y responsable.
+                Además, contamos con la red BOSCH CAR SERVICE donde encontrarás talleres multiservice y multimarca para el mantenimiento de tu vehículo, con un descuento del 10% en el total de la mano de obra.
+                Aprovechá los descuentos especiales que tenemos para nuestros socios en establecimientos del rubro automotor (Talleres, Gomerías, Chapa y Pintura, Varios)
+            </h4>
+        </div> -->
+           
+          
+    </section>
+    
+    <footer class="PiePagina">
+        <div>   
+            <center>Domicilio: Paysandú 532, C.A.B.A.</center>
+            <center>Tel.: (54) 11 4431 8186 - Cel.: 11 5112 7414</center>
+            <center>Email: info@tallermecanico.com.ar</center> 
+        </div>     
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  </body>
+</html>
